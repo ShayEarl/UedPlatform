@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/animate.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="../img/index-assets/logo.png" alt="">
+            </a>
+            <div>
+                <ul>
+
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="works.html">作品</a></li>
+                    <li><a href="Share.html">分享</a></li>
+                    <li><a href="Resources.html">资源</a></li>
+                    <li><a class="bg1" href="about.html">关于</a></li>
+                    <li class="zhudeng deng"><a href="Logon.html">登陆</a></li>
+                    <li class="zhudeng zhu"><a href="register.html">注册</a></li>
+                    <li class="ydl">
+                        <p class="ts">你好<a href="personal.html?name=小辣椒">小辣椒</a>|<a href="tuixhui.html">退出</a></p>
+                    </li>
+                </ul>
+            </div>
+            <p></p>
+        </div>
+    </header>
+    <div class="warp">
+        <div class="warps">
+            <div class="main">
+                <div class="title"></div>
+                <h6>用户注册</h6>
+
+                <div class="items">
+                    <input type="text" value="请输入用户名">
+                    <p>用户名不正确</p>
+                </div>
+                <div class="items">
+
+                    <input type="text" value="请输入邮箱地址">
+                    <p>用户名不正确</p>
+                </div>
+                <div class="items">
+                    <input type="possword" value="请输入密码">
+                    <p>用户名不正确</p>
+                </div>
+                <div class="items">
+                    <input type="possword" value="请再次输入密码">
+                    <p>用户名不正确</p>
+                </div>
+
+
+
+                <div class="items"></div>
+                <div class="items sublims">
+                    <div class="sublim">
+                        登录
+                    </div>
+                </div>
+                <p class="ts">已有账号,马上<a href="Logon.html">马上登录</a></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <div class="footerleft">
+                <img src="../img/index-assets/footerlogo.png">
+                <ul>
+                    <li>
+                        <a href="javascript:;">东方金科</a></li>
+                    <li>
+                        <a href="javascript:;">东方资产</a></li>
+                    <li>
+                        <a href="javascript:;">东方汇</a></li>
+                    <li>
+                        <a href="javascript:;">EUED.ME</a></li>
+                </ul>
+            </div>
+            <div class="footerright">
+                © 2016 <span>EUED.ME.</span> All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/geturl.js"></script>
+    <script>
+        //header动画
+        var winhei = $(window).height();
+        window.onscroll = function (e) {
+            var top = $(window).scrollTop();
+            if (top < 100) {
+                $("header").removeClass("headermove");
+            } else if (top > 100) {
+                $("header").addClass("headermove");
+            }
+        }
+
+        //页面动画
+
+        var listarr = {};
+        var list = $(".teamItem>div");
+        var winhei = $(window).height();
+
+        function inintimg() {
+            list.each(function () {
+                var $this = $(this);
+                var hei = $this.offset().top;
+                listarr[hei] = $this;
+            })
+        }
+        inintimg()
+        $(window).resize(function () {
+            inintimg()
+            winhei = $(window).height();
+        })
+
+
+        $(window).scroll(function () {
+            anmations()
+        })
+        anmations()
+
+        function anmations() {
+            var scrolltop = $(window).scrollTop();
+            for (i in listarr) {
+                if (i < winhei + scrolltop - 100) {
+                    imgs = listarr[i]
+                    $(imgs).find(".listimgs").show();
+                }
+            }
+
+        }
+        var mySwiper = new Swiper(".swiper-container", {
+            autoplay: 3500,
+            loop: true,
+            speed: 1000,
+            prevButton: '.teamleft',
+            nextButton: '.teamright',
+        });
+        //页面跳转
+        $(".listimgs").on("click", function () {
+            var data_name = $(this).attr("data-name");
+            location.href = "aboutxingq.html?data_name=" + data_name + "";
+        })
+    </script>
+</body>
+
+</html>

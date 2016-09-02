@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/Designer.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="../img/index-assets/logo.png" alt="">
+            </a>
+            <div>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="works.html">作品</a></li>
+                    <li><a href="Share.html">分享</a></li>
+                    <li><a href="Resources.html">资源</a></li>
+                    <li><a class="bg1" href="about.html">关于</a></li>
+                    <li class="zhudeng deng"><a href="Logon.html">登陆</a></li>
+                    <li class="zhudeng zhu"><a href="register.html">注册</a></li>
+                    <li class="ydl">
+                        <p>你好<a href="personal.html?name=小辣椒">小辣椒</a>|<a href="tuixhui.html">退出</a></p>
+                    </li>
+                </ul>
+            </div>
+            <p></p>
+        </div>
+    </header>
+    <div class="warp">
+        <div class="leftimg"><img src="../img/index-assets/disigns.png" alt=""></div>
+        <div class="righttext">
+            <h1>白净</h1>
+            <h2>无线设计师</h2>
+            <h3>简介</h3>
+            <p>世界权威电子设计杂志 NEWWEBPICK 推荐设计师 收录电子杂志 （第29期）</p>
+            <p>世界权威电子设计杂志 NE（第29期）</p>
+            <p>世界权威电子设计杂志 NEWWEB电子杂志 （第29期）</p>
+            <p>世界权威电子设计杂志 NEWWEBPICK 推荐设计师 收录电子期）</p>
+            <p>世界权威电子设计杂志 NEWWEBPICK 推荐设计师 收录电子杂志 （第29期）</p>
+            <h3>作品</h3>
+            <p class="li">世界权威电子设）</p>
+            <p class="li">世界权威电子设计杂杂志 （第29期）</p>
+            <p class="li">世界权威电子设计）</p>
+            <p class="li">世界权威电子设计杂 推荐</p>
+            <p class="li">世界权威电子设计杂志 N 推荐</p>
+            <p class="li">世界权威电子设计杂志 N子杂志 （第29期）</p>
+            <h3>作品</h3>
+            <p class="li">世界权威电子设计杂志 NE（第29期）</p>
+            <p class="li">世界权威电子设计杂志 NEWWEB电子杂志 （第29期）</p>
+            <p class="li">世界权威电子设计杂志 NEWWEBPICK 推荐设计师 收录电子杂志 （第29期）</p>
+            <p class="li">世界权威电子设计杂志 NEWWEBPICK 推荐</p>
+            <p class="li">世界权威电子设计杂志 NEWWEBPICK 推荐</p>
+            <p class="li">世界权威电子设计杂志 NEWWEBPICK 推荐设计师 收录电子杂志 （第29期）</p>
+            <h3>其他</h3>
+
+            <p>多年来，一直专注于互联网视觉设计，服务过300多个大型客户。不论是品牌官网、企业官网、还是信息应用平台，能提供精确的策划方案和视觉设计方案。无论是策略创意还是视觉执行，都有着比传统互联网公司更高的造诣。</p>
+            <p>
+                <p>多年来，一直专注于互联网视觉设计，服务过300多个大型客户。不论是品牌官网、企业官网、还是信息应用平台，能提供精确的策划方案和视觉设计方案。无论是策略创意还是视觉执行，都有着比传统互联网公司更高的造诣。</p>
+            </p>
+
+        </div>
+    </div>
+    <footer>
+        <div>
+            <div class="footerleft">
+                <img src="../img/index-assets/footerlogo.png">
+                <ul>
+                    <li>
+                        <a href="javascript:;">东方金科</a></li>
+                    <li>
+                        <a href="javascript:;">东方资产</a></li>
+                    <li>
+                        <a href="javascript:;">东方汇</a></li>
+                    <li>
+                        <a href="javascript:;">EUED.ME</a></li>
+                </ul>
+            </div>
+            <div class="footerright">
+                © 2016 <span>EUED.ME.</span> All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/geturl.js"></script>
+    <script>
+        //header动画
+        var winhei = $(window).height();
+        window.onscroll = function (e) {
+            var top = $(window).scrollTop();
+            if (top < 100) {
+                $("header").removeClass("headermove");
+            } else if (top > 100) {
+                $("header").addClass("headermove");
+            }
+        }
+        var bodyhs = $(".righttext").height();
+        console.log(3)
+        bodyhs > 1000 ? $(".warp").height(bodyhs) : $(".warp").height(1000);
+    </script>
+</body>
+
+</html>

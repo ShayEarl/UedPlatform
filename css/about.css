@@ -1,0 +1,146 @@
+.warp {
+  height: 2000px;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 177px;
+}
+.warp .lefthead {
+  float: left;
+  width: 180px;
+  height: 100%;
+}
+.warp .lefthead h2 {
+  font-size: 28px;
+  color: #333;
+}
+.warp .lefthead h4 {
+  font-size: 20px;
+  color: #333333;
+  margin-top: 10px;
+}
+.warp .lefthead > div {
+  width: 30px;
+  height: 2px;
+  background: #555555;
+  margin: 30px 0;
+}
+.warp .lefthead p {
+  font-size: 14px;
+  height: 28px;
+  line-height: 28px;
+  color: #888888;
+}
+.warp .banner {
+  width: 100%;
+  height: 590px;
+}
+.warp .banner > div:last-child {
+  float: right;
+  width: 934px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.warp .banner > div:last-child .buttons {
+  width: 50px;
+  height: 24px;
+  position: absolute;
+  bottom: 125px;
+  z-index: 999;
+}
+.warp .banner > div:last-child .buttons:hover {
+  cursor: pointer;
+}
+.warp .banner > div:last-child .teamleft {
+  right: 255px;
+  background: url(../img/index-assets/teamleft.png) center no-repeat;
+}
+.warp .banner > div:last-child .teamright {
+  right: 205px;
+  background: url(../img/index-assets/teamright.png) center no-repeat;
+}
+.warp .banner > div:last-child .teamleft:hover {
+  background: url(../img/index-assets/teamleft1.png) center no-repeat;
+}
+.warp .banner > div:last-child .teamright:hover {
+  background: url(../img/index-assets/teamright1.png) center no-repeat;
+}
+.warp .main {
+  width: 100%;
+  height: 1394px;
+  padding-top: 86px;
+}
+.warp .main .teamItem {
+  padding-top: 60px;
+  width: 934px;
+  height: auto;
+  float: right;
+}
+.warp .main .teamItem > div {
+  height: 220px;
+  width: 100%;
+  margin-top: 73px;
+}
+.warp .main .teamItem > div > div {
+  width: 435px;
+  height: 100%;
+  float: left;
+  cursor: pointer;
+}
+.warp .main .teamItem > div > div > div:first-child {
+  width: 175px;
+  float: left;
+}
+.warp .main .teamItem > div > div > div:last-child {
+  width: 260px;
+  float: right;
+  padding-top: 90px;
+}
+.warp .main .teamItem > div > div > div:last-child h5 {
+  font-size: 18px;
+  color: #333333;
+}
+.warp .main .teamItem > div > div > div:last-child h6 {
+  height: 35px;
+  line-height: 35px;
+  font-size: 12px;
+  color: #999;
+}
+.warp .main .teamItem > div > div > div:last-child section {
+  margin-top: 10px;
+  height: 57px;
+  border-left: 1px solid #d6d6d6;
+  padding-left: 13px;
+  color: #999999;
+}
+.warp .main .teamItem > div > div > div:last-child section p {
+  line-height: 26px;
+  color: #999;
+  font-size: 14px;
+}
+.warp .main .teamItem > div > div > div:last-child:hover > h5 {
+  color: #e50224;
+}
+.warp .main .teamItem > div > div > div:last-child {
+  float: right;
+}
+.warp .main .teamItem > div > div:last-child {
+  float: right;
+}
+.yc {
+  animation-delay: .5s;
+}
+.listimgs {
+  display: none;
+}
+body {
+  overflow-x: hidden;
+}
+footer > div {
+  position: relative;
+}
+footer > div .footerleft {
+  position: absolute;
+  left: 0;
+  top: 38px;
+}
